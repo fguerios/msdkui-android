@@ -82,9 +82,15 @@ class GuidanceStreetLabelSetting : Setting<GuidanceStreetLabel>() {
                 guidanceStreetLabelData = GuidanceStreetLabelData("Street Label Text",
                     ThemeUtil.getColor(context, R.attr.colorPositive))
             },
+
             "With all properties set -- background colorForegroundSecondary" to GuidanceStreetLabelSettingItem().apply {
                 guidanceStreetLabelData = GuidanceStreetLabelData("Street Label Text",
                     ThemeUtil.getColor(context, R.attr.colorForegroundSecondary))
+            },
+
+            "With all properties set -- background colorPositive and very long text" to GuidanceStreetLabelSettingItem().apply {
+                guidanceStreetLabelData = GuidanceStreetLabelData("This is a very very very very very very very very long text",
+                    ThemeUtil.getColor(context, R.attr.colorPositive))
             },
 
             "Without background and with red text color" to GuidanceStreetLabelSettingItem().apply {
